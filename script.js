@@ -12,9 +12,14 @@ var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numericChars = "1234567890";
 // added specialChars
 var specialChars = "!?/-_*{}[]|@^<>,.()%#$&`~"
-var inputLength = 8
-var haslowercaseChars = true
-var hasuppercaseChars = true
+
+// added input values
+// Char input values
+var inputLength = 8;
+var haslowercaseChars = true;
+var hasuppercaseChars = true;
+var hasnumericChars = true;
+var hasspecialChars = true;
 
 
 // prompt for series of pwd criteria
