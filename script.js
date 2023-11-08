@@ -31,8 +31,9 @@ var hasspecialChars = true;
 // to validate input after each prompt, at least one of each char type should be selected
 // pwd generated once all prompts meet criteria
 // pwd is displayed in alert or written to page
-
-// added lowercase for loop
+if (!haslowercaseChars && !hasuppercaseChars); {
+  alert ("Please choose both uppercase and lowercase characters.");
+  }
 for (var i = 0; i < inputLength; i++) {
   var random = Math.floor(Math.random() * lowercaseChars.length);
   password += lowercaseChars[random];
@@ -54,9 +55,6 @@ for (var i = 0; i < inputLength; i++) {
   password += specialChars[random];
 }
 
-// if (!haslowercaseChars && !hasuppercaseChars); {
-// alert ("Please choose both uppercase and lowercase characters.");
-// }
 console.log(password);
 return password;
 
