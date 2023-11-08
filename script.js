@@ -4,9 +4,12 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
 var password = "";
 var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+var uppercaseChars = ""
+var numericChars = ""
+var specialChars = ""
+var inputLength = 16
 
-console.log(password);
-return password;
+
 
 // prompt for series of pwd criteria
 // select pwd criteria
@@ -17,7 +20,17 @@ return password;
 // to validate input after each prompt, at least one of each char type should be selected
 // pwd generated once all prompts meet criteria
 // pwd is displayed in alert or written to page
+
+// added lowercase for loop
+for (var i = 0; i < inputLength; i++) {
+  var random = Math.floor(Math.random() * lowercaseChars.length);
+  password += lowercaseChars[random];
 }
+console.log(password);
+return password;
+
+}
+
 // Get references to the #generate element
 
 // Write password to the #password input
