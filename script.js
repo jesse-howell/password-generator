@@ -7,7 +7,7 @@ var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numericChars = "1234567890";
 var specialChars = "!#$%&()*+,-./:;<=>?@[]^_`{|}~";
-var inputLength = 16;
+var inputLength = 8;
 var haslowercaseChars = true;
 var hasuppercaseChars = true;
 var hasnumericChars = true;
@@ -23,12 +23,18 @@ var hasinputLength = true;
 // pwd generated once all prompts meet criteria
 // pwd is displayed in alert or written to page
 // added input variable
-// var input = prompt("Please select password length and criteria.");
-// var criteriaSelection;
-// if (input) {
-// criteriaSelection = inputLength
-// }
+var input = prompt("Please select password length between 8 and 128 characters.");
+var lengthSelection = inputLength
+// added input if statement and alert
+if (input) {
+ (lengthSelection > 7 && lengthSelection < 129);
+  { 
+    alert("What character type would you like to include?");
+  } 
+  // function alert()("Please select correct password length.");
 
+}
+}
 // added for loops for each variable
 for (var i = 0; i < inputLength; i++) {
   var random = Math.floor(Math.random() * lowercaseChars.length);
@@ -72,4 +78,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
