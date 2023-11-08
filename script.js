@@ -7,12 +7,12 @@ var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numericChars = "1234567890";
 var specialChars = "!#$%&()*+,-./:;<=>?@[]^_`{|}~";
-var lengthInput = 16;
+var inputLength = 16;
 var haslowercaseChars = true;
 var hasuppercaseChars = true;
 var hasnumericChars = true;
 var hasspecialChars = true;
-var haslengthInput = true;
+var hasinputLength = true;
 // prompt for series of pwd criteria
 // select pwd criteria
 // prompt for pwd length
@@ -22,7 +22,15 @@ var haslengthInput = true;
 // to validate input after each prompt, at least one of each char type should be selected
 // pwd generated once all prompts meet criteria
 // pwd is displayed in alert or written to page
+// added input variable
+var input = prompt("Please select password length and criteria.");
+var criteriaSelection;
+if (input) {
+criteriaSelection = inputLength
+}
+// for (i = 0; i > 16; i++) {
 
+// }
 console.log(password);
 return password;
 }
