@@ -4,11 +4,13 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
 var password = "";
 var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
-var uppercaseChars = ""
+// added uppercase letters
+var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var numericChars = ""
 var specialChars = ""
 var inputLength = 16
-
+var haslowercaseChars = true
+var hasuppercaseChars = true
 
 
 // prompt for series of pwd criteria
@@ -25,6 +27,16 @@ var inputLength = 16
 for (var i = 0; i < inputLength; i++) {
   var random = Math.floor(Math.random() * lowercaseChars.length);
   password += lowercaseChars[random];
+}
+
+// added uppercase for loop and if statement
+for (var i = 0; i < inputLength; i++) {
+  var random = Math.floor(Math.random() * uppercaseChars.length);
+  password += uppercaseChars[random];
+}
+
+if (!haslowercaseChars && !hasuppercaseChars); {
+alert ("Please choose both uppercase and lowercase characters.");
 }
 console.log(password);
 return password;
