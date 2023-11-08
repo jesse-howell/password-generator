@@ -23,14 +23,37 @@ var hasinputLength = true;
 // pwd generated once all prompts meet criteria
 // pwd is displayed in alert or written to page
 // added input variable
-var input = prompt("Please select password length and criteria.");
-var criteriaSelection;
-if (input) {
-criteriaSelection = inputLength
-}
-// for (i = 0; i > 16; i++) {
-
+// var input = prompt("Please select password length and criteria.");
+// var criteriaSelection;
+// if (input) {
+// criteriaSelection = inputLength
 // }
+
+// added for loops for each variable
+for (var i = 0; i < inputLength; i++) {
+  var random = Math.floor(Math.random() * lowercaseChars.length);
+password += lowercaseChars[random];
+
+}
+
+for (var i = 0; i < inputLength; i++) {
+  var random = Math.floor(Math.random() * uppercaseChars.length);
+password += uppercaseChars[random];
+
+}
+
+for (var i = 0; i < inputLength; i++) {
+  var random = Math.floor(Math.random() * numericChars.length);
+password += numericChars[random];
+
+}
+
+for (var i = 0; i < inputLength; i++) {
+  var random = Math.floor(Math.random() * specialChars.length);
+password += specialChars[random];
+
+}
+
 console.log(password);
 return password;
 }
