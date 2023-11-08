@@ -32,8 +32,6 @@ var hasspecialChars = true;
 // pwd generated once all prompts meet criteria
 // pwd is displayed in alert or written to page
 
-// added password length prompt
-let sign = prompt("Please choose password length between 8 and 128 characters.")
 // added lowercase for loop
 for (var i = 0; i < inputLength; i++) {
   var random = Math.floor(Math.random() * lowercaseChars.length);
