@@ -10,7 +10,8 @@ var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 // added numeric characters
 var numericChars = "1234567890";
-var specialChars = ""
+// added specialChars
+var specialChars = "!?/-_*{}[]|@^<>,.()%#$&`~"
 var inputLength = 8
 var haslowercaseChars = true
 var hasuppercaseChars = true
@@ -41,6 +42,11 @@ for (var i = 0; i < inputLength; i++) {
 for (var i = 0; i < inputLength; i++) {
   var random = Math.floor(Math.random() * numericChars.length);
   password += numericChars[random];
+}
+// added specialChar for loop
+for (var i = 0; i < inputLength; i++) {
+  var random = Math.floor(Math.random() * specialChars.length);
+  password += specialChars[random];
 }
 
 // if (!haslowercaseChars && !hasuppercaseChars); {
