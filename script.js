@@ -4,6 +4,7 @@ var generateBtn = document.querySelector("#generate");
 // added function variables
 function generatePassword() {
 var password = "";
+
 var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
 // added uppercase letters
 var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -30,16 +31,28 @@ var hasspecialChars = true;
 // to validate input after each prompt, at least one of each char type should be selected
 // pwd generated once all prompts meet criteria
 // pwd is displayed in alert or written to page
-if (!haslowercaseChars && !hasuppercaseChars); {
+// added if statements
+if (alert ("Please choose from the following criteria.")); {
+  
+}
+  if (!haslowercaseChars || !hasuppercaseChars); {
   alert ("Please choose both uppercase and lowercase characters.");
   }
-for (var i = 0; i < inputLength; i++) {
-  var random = Math.floor(Math.random() * lowercaseChars.length);
-  password += lowercaseChars[random];
+  if (!hasnumericChars && !hasspecialChars); {
+  alert ("Please choose numbers and special characters.");
 }
+  prompt ("Please select a password length between 8 and 128 characters."); {
+    
+  }
 
-console.log(password);
-return password;
+
+// for (var i = 0; i < inputLength; i++) {
+//   var random = Math.floor(Math.random() * charOptions.length);
+//   password += charOptions[random];
+// }
+
+// console.log(password);
+// return password;
 
 }
 
