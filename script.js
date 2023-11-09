@@ -1,4 +1,5 @@
 // Assignment code here
+// initializers
 var generateBtn = document.querySelector("#generate");
 // added function variables
 function generatePassword() {
@@ -35,22 +36,6 @@ if (!haslowercaseChars && !hasuppercaseChars); {
 for (var i = 0; i < inputLength; i++) {
   var random = Math.floor(Math.random() * lowercaseChars.length);
   password += lowercaseChars[random];
-}
-
-// added uppercase for loop and if statement
-for (var i = 0; i < inputLength; i++) {
-  var random = Math.floor(Math.random() * uppercaseChars.length);
-  password += uppercaseChars[random];
-}
-// added numeric for loop
-for (var i = 0; i < inputLength; i++) {
-  var random = Math.floor(Math.random() * numericChars.length);
-  password += numericChars[random];
-}
-// added specialChar for loop
-for (var i = 0; i < inputLength; i++) {
-  var random = Math.floor(Math.random() * specialChars.length);
-  password += specialChars[random];
 }
 
 console.log(password);
