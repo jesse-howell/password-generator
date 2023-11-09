@@ -76,4 +76,4 @@ N/A
 
 N/A
 
-![Live URL](https://jesse-howell.github.io/password-generator/)
+[Live URL](https://jesse-howell.github.io/password-generator/)
