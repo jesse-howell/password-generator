@@ -3,8 +3,6 @@ var generateBtn = document.querySelector("#generate");
 // added function variables
 function generatePassword() {
 var password = "";
-
-var passwordCriteria = [lowercaseChars, uppercaseChars, numericChars, specialChars];
 var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
 // added uppercase letters
 var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
