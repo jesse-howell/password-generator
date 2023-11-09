@@ -46,13 +46,13 @@ if (alert ("Please choose from the following criteria.")); {
   }
 
 
-// for (var i = 0; i < inputLength; i++) {
-//   var random = Math.floor(Math.random() * charOptions.length);
-//   password += charOptions[random];
-// }
+for (var i = 0; i < inputLength; i++) {
+  var random = Math.floor(Math.random() * lowercaseChars.length);
+  password += lowercaseChars[random];
+}
 
-// console.log(password);
-// return password;
+console.log(password);
+return password;
 
 }
 
